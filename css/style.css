@@ -51,8 +51,7 @@ hr.magenta {
     background: -ms-linear-gradient(left, rgba(219,0,117,0.63) 32%, rgba(107,104,156,0.63) 53%, rgba(107,104,156,0.62) 53%, rgba(0,204,194,0.62) 73%);
     background: linear-gradient(to right, rgba(219,0,117,0.63) 32%, rgba(107,104,156,0.63) 53%, rgba(107,104,156,0.62) 53%, rgba(0,204,194,0.62) 73%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0075', endColorstr='#00ccc2', GradientType=1 );
-    height: 0.04rem;
-    max-width: 15rem;
+    height: .04rem
 }
 
 .mayusculas{
@@ -989,6 +988,15 @@ margin: unset;
       width: 100%;
       height: 100%;
 }
+#equipo a {
+    color: #444;
+}
+#equipo a:focus,
+#equipo a:hover {
+    color: #000;
+    outline: 0 none;
+    text-decoration: none;
+}
 #equipo .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -1009,16 +1017,7 @@ margin: unset;
 #equipo .card {
     background-color: unset;
 }
-#equipo .card a { 
-    color: #444;
-}
 
-#equipo .card  a:focus,
-#equipo .card  a:hover {
-    color: #000;
-    outline: 0 none;
-    text-decoration: none;
-}
 /* pagina */
 
 .intro-pag {
@@ -1062,6 +1061,59 @@ color: rgb(255, 255, 255);
   100%{
     width: 100%;
   }
+}
+#contenido-blog a{
+   color: #833ab4;
+}
+#contenido-blog a:focus {
+   color: #00C2FF;
+}
+#contenido-blog a:hover {
+   color: #FB01FC;
+}
+
+#contenido-blog .image_outer_container {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 20px;
+}
+
+#contenido-blog .image_inner_container {
+    border-radius: 50%;
+    padding: 2px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to bottom, #8a1872, #c04bcd, #00cdc2);
+    background: linear-gradient(to bottom, #8a1872, #c04bcd, #00cdc2);
+}
+
+#contenido-blog .image_inner_container img {
+    height: 127px;
+    width: 127px;
+    border-radius: 50%;
+    border: 2px solid 
+    white;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.6s;
+}
+#contenido-blog .image_inner_container:hover img {
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+#contenido-blog .image_outer_container .green_icon {
+    background-color: 
+    #4cd137;
+    position: absolute;
+    right: 25px;
+    bottom: 5.9px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid
+    white;
+    border-radius: 50%;
 }
 
 
