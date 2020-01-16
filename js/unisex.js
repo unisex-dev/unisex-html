@@ -106,12 +106,18 @@ $(document).ready(function() {
 });
 
     window.addEventListener('DOMContentLoaded', (event) => {
-        jQuery('#primary-navigation').css("background-color", "rgba(59,58,54,0)");
+		        jQuery('#primary-navigation').css(
+		        	"background-color", "rgba(59,58,54,0)"
+		        	);
         jQuery(window).scroll(function() {
             if (jQuery(window).scrollTop() > 0) {
-                jQuery('#primary-navigation').css("background-color", "rgba(32,32,32,1)");              
+                jQuery('#primary-navigation').css(
+                	"background-color", "rgba(32,32,32,1)"
+                	);              
             } else {
-                jQuery('#primary-navigation').css("background-color", "rgba(59,58,54,0)");
+                jQuery('#primary-navigation').css(
+                	"background-color", "rgba(59,58,54,0)"
+                	);
             }
         });
     }); 
