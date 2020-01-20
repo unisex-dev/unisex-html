@@ -164,7 +164,7 @@ $(document).ready(function() {
       var filterizr = $('.filtr-container').filterizr(
       //Default options
       options = {
-         animationDuration: 1.05,
+         animationDuration: 0.20,
          callbacks: {
             onFilteringStart: function() { },
             onFilteringEnd: function() { },
@@ -186,7 +186,9 @@ $(document).ready(function() {
             opacity: 0,
             transform: 'scale(1)'
          },
-         layout: 'sameSize',
+
+         gutterPixels: 0,
+         layout: 'packed',
          multifilterLogicalOperator: 'and',
          selector: '.filtr-container',
          setupControls: true
