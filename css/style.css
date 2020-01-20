@@ -2,13 +2,13 @@
 ================================================== */
 html, body {
   font-family:'Open Sans',sans-serif;
- overflow: hidden;*/
+ /*overflow: hidden;*/
   color: #444;
 }
  @media screen and (max-width: 768px) {
 html, body {
   font-family:'Open Sans',sans-serif;
- overflow: hidden;*/
+ /*overflow: hidden;*/
   color: #444;
 }
 }
@@ -77,7 +77,9 @@ hr.magenta {
 .espacio-1{
   margin-top: 0.8rem;
 }
-
+.espacio-2{
+  margin-top: 2.9rem;
+}
 .bg-cian {
    background-image: linear-gradient(to right, #00cdc2, #00aed7, #0088d8, #6159b6, #8a1872);
 }
@@ -104,7 +106,6 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
 }
 /*botones*/
  .btn{
-    margin: 0 0 15px;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -114,7 +115,6 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
  .btn {
     position: relative;
     padding: 10px 25px;
-    margin: .3125rem 1px;
     font-size: .75rem;
     font-weight: 400;
     line-height: 1.428571;
@@ -501,38 +501,25 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
 
 
 /*trabajo*/
-#trabajos .portfolio .categories-grid span {
- font-size:30px;
- margin-bottom:30px;
- display:inline-block
+#trabajos ul {
+  margin: 0;
+  padding: 0 0 1em 0;
+  list-style-type: none;
 }
-#trabajos .portfolio .categories-grid .categories ul li {
- list-style:none;
- margin:20px 0
+#trabajos li {
+  display: inline-block;
+  margin-left: .9em;
+  margin-top: .9em;
+  cursor: default;
 }
-#trabajos .portfolio .categories-grid .categories ul li a {
- display:inline-block;
- color:#60606e;
- padding:0 10px;
- margin:0 10px;
- -webkit-transition:all .2s ease-in-out .2s;
- transition:all .2s ease-in-out .2s
+#trabajos li:hover {
+  color: #FB00FB;
 }
-#trabajos .portfolio .categories-grid .categories ul li a:hover,
-#trabajos .portfolio .categories-grid .categories ul li a:focus {
- text-decoration:none
+#trabajos .active {
+  background-color: red;
+  border: 1px solid red;
 }
-#trabajos .portfolio .categories-grid .categories ul li a.active {
- margin-left:0;
- background-color:#ffbf00;
- padding:0px 20px;
- color:white;
- border-radius:25px;
- text-decoration:none
-}
-#trabajos .portfolio_filter {
- padding-left:0
-}
+
 #trabajos .portfolio_item {
  position:relative;
  overflow:hidden;
@@ -723,7 +710,7 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
 #noticias .meta{
     position: absolute;
     padding: 3px;
-    bottom: 70vh;
+    bottom: 450px;
     left: 15px;
     font-size: .8rem;
     background-color:#A41C87; 
@@ -761,7 +748,7 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
     }
  @media screen and (max-width: 1024px) {
 #noticias .meta {
-    bottom: 50vh;
+    bottom: 400px;
 }
 }
 
@@ -1072,12 +1059,13 @@ color: rgb(255, 255, 255);
    color: #FB01FC;
 }
 
+
+
 #contenido-blog .image_outer_container {
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 50%;
     position: relative;
-    margin-right: 20px;
 }
 
 #contenido-blog .image_inner_container {
@@ -1116,6 +1104,18 @@ color: rgb(255, 255, 255);
     border-radius: 50%;
 }
 
+#contenido-blog .bio a {
+    color:  #4cd137;
+}
+#contenido-blog .bio  a {
+    color: #444;
+}
+#contenido-blog .bio  a:focus,
+#contenido-blog .bio  a:hover {
+    color: #000;
+    outline: 0 none;
+    text-decoration: none;
+}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (max-width: 1024px) {
@@ -1125,6 +1125,7 @@ color: rgb(255, 255, 255);
   .miga {
     font-size: 1.5em;
   }
+
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -1145,6 +1146,9 @@ color: rgb(255, 255, 255);
   .migas {
     font-size: 0.7em;
   } 
+  .img-bio{
+    display: none;
+   }
 }
 
 @media only screen and (max-width: 320px) {

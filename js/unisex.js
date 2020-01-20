@@ -1,4 +1,13 @@
 $(document).ready(function() {
+        skrollr.init({
+        forceHeight: !1,
+        smoothScrolling: !1,
+        mobileDeceleration: .004,
+        mobileCheck: function() {
+            return !1
+        }
+    });
+
     $("html").niceScroll({
         cursorwidth: "0.3rem",
         cursorfixedheight: 20,
@@ -7,6 +16,7 @@ $(document).ready(function() {
         autohidemode: !1,
         zindex: 9999
     });
+
     //presentacion
     var swiper = new Swiper('.slider-presentacion', {
         slidesPerView: 1,
@@ -124,38 +134,98 @@ $(document).ready(function() {
         }
     });
 
-});
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    jQuery('#primary-navigation').css("background-color", "rgba(59,58,54,0)");
-    jQuery(window).scroll(function() {
-        if (jQuery(window).scrollTop() > 0) {
-            jQuery('#primary-navigation').css("background-color", "rgba(32,32,32,1)");
-        } else {
-            jQuery('#primary-navigation').css("background-color", "rgba(59,58,54,0)");
+    var swiper = new Swiper('.slider-portafolio', {
+        slidesPerView: 4,
+        speed:5000,
+        effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 5,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 1,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
         }
     });
+
+      var filterizr = $('.filtr-container').filterizr(
+      //Default options
+      options = {
+         animationDuration: 1.05,
+         callbacks: {
+            onFilteringStart: function() { },
+            onFilteringEnd: function() { },
+            onShufflingStart: function() { },
+            onShufflingEnd: function() { },
+            onSortingStart: function() { },
+            onSortingEnd: function() { }
+         },
+         controlsSelector: '',
+         delay: 0,
+         delayMode: 'progressive',
+         easing: 'ease-out',
+         filter: 'all',
+         filterOutCss: {
+            opacity: 0,
+            transform: 'scale(0.5)'
+         },
+         filterInCss: {
+            opacity: 0,
+            transform: 'scale(1)'
+         },
+         layout: 'sameSize',
+         multifilterLogicalOperator: 'and',
+         selector: '.filtr-container',
+         setupControls: true
+      });
+
+      $('.filter-menu').on('change', function(event) {
+         var val = $(event.currentTarget).val();
+         filterizr.filterizr('toggleFilter', val);
+      });
+
 });
+
 
 (function scrollReveal() {
   window.sr = ScrollReveal();
   
-window.sr = ScrollReveal({
-  reset: false,
-  viewFactor: 0.4,
-  easing: "cubic-bezier(0.560, 0.005, 0.225, 1.150)"
-});
+    window.sr = ScrollReveal({
+      reset: false,
+      viewFactor: 0.4,
+      easing: "cubic-bezier(0.560, 0.005, 0.225, 1.150)"
+    });
 
-sr.reveal(".post-media", {
-  origin: "bottom",
-  distance: "10rem",
-  duration: 900
-});
-sr.reveal(".blog-meta", {
-  origin: "bottom",
-  distance: "0rem",
-  duration: 1200
-});
-})();
+    sr.reveal(".card", {
+      origin: "bottom",
+      distance: "10rem",
+      duration: 900
+    });
+    sr.reveal(".meta", {
+      origin: "bottom",
+      distance: "20rem",
+      duration: 500
+    });
+    sr.reveal(".profile", {
+      origin: "bottom",
+      distance: "20rem",
+      duration: 1200
+    });
+ })();  
+ 
 
     
+
