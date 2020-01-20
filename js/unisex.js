@@ -22,7 +22,10 @@ $(document).ready(function() {
         slidesPerView: 1,
         spaceBetween: 30,
         effect: 'fade',
-        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -37,9 +40,8 @@ $(document).ready(function() {
         slidesPerView: 1,
         spaceBetween: 30,
         effect: 'fade',
-        loop: true,
         autoplay: {
-            delay: 2500,
+            delay: 4800,
             disableOnInteraction: false,
         },
         pagination: {
@@ -110,7 +112,6 @@ $(document).ready(function() {
 
     var swiper = new Swiper('.slider-equipo', {
         slidesPerView: 4,
-        loop: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
