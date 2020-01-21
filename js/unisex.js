@@ -15,7 +15,19 @@ $(document).ready(function() {
         cursorcolor: "#222222",
         cursorborder: "0px",
         autohidemode: !1,
-        zindex: 9999
+        zindex: 9999,
+        // enable zoom feature
+        boxzoom: false,
+
+        // double click to zoom
+        dblclickzoom: true,
+
+        // zoom via gestures
+        gesturezoom: true,
+
+        // displays "grab" icon
+        grabcursorenabled: true,
+
     });
 
     //presentacion
