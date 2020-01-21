@@ -2,13 +2,13 @@
 ================================================== */
 html, body {
   font-family:'Open Sans',sans-serif;
- /*overflow: hidden;*/
+ overflow: hidden;
   color: #444;
 }
  @media screen and (max-width: 768px) {
 html, body {
   font-family:'Open Sans',sans-serif;
- /*overflow: hidden;*/
+  overflow: visible
   color: #444;
 }
 }
