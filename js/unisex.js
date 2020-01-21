@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
         skrollr.init({
         forceHeight: !1,
         smoothScrolling: !1,
@@ -36,6 +37,7 @@ $(document).ready(function() {
         },
     });
 
+    //opiniones
     var swiper = new Swiper('.slider-frases', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -54,7 +56,7 @@ $(document).ready(function() {
         },
     });
 
-
+    //slider noticias en inicio
     var swiper = new Swiper('.slider-noticias', {
         slidesPerView: 3,
         spaceBetween: 1,
@@ -76,6 +78,7 @@ $(document).ready(function() {
         }
     });
 
+    //slider noticias en el blog
     var swiper = new Swiper('.slider-blog', {
         slidesPerView: 4,
         spaceBetween: 1,
@@ -97,23 +100,12 @@ $(document).ready(function() {
         }
     });
 
-    var swiper = new Swiper('.slider-testimonios', {
-        slidesPerView: 1,
-        effect: 'fade',
-        autoplay: {
-            delay: 8500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
+    //slider proyectos relativos
     var swiper = new Swiper('.slider-equipo', {
         slidesPerView: 4,
+        spaceBetween: 1,
         autoplay: {
-            delay: 2500,
+            delay: 9500,
             disableOnInteraction: false,
         },
         pagination: {
@@ -121,16 +113,33 @@ $(document).ready(function() {
             clickable: true,
         },
         breakpoints: {
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 5,
-            },
             768: {
-                slidesPerView: 3,
-                spaceBetween: 1,
+                slidesPerView: 1,
             },
             1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
+            },
+        }
+    });
+
+    //slider proyectos relativos
+    var swiper = new Swiper('.slider-relativos', {
+        slidesPerView: 4,
+        spaceBetween: 1,
+        autoplay: {
+            delay: 9500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 2,
             },
         }
     });

@@ -331,12 +331,6 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
 
 .dropdown-menu {
   background-color: #3D3D3D;
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 0;
-  border: 0;
-  border-top: 5px solid #00FBFB; 
   transition: all 0.2s;
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -356,11 +350,34 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
   visibility: visible;
 }
 
-.dropdown-menu li a {
+.dropdown-item{
   padding: 5px 15px;
   font-size: 0.7rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
+  color: #00CDC2;
+  background-color: #202020;
+}
+
+.dropdown-item{
+  padding: 5px 15px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase !important;
+  color: #00CDC2;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+   border-top: 1px solid #00FBFB; 
+    color: #EA27C2;
+    background-color: #202020;
+}
+
+
+@media screen and (max-width: 800px) {
+  .navbar {
+  background-color: #202020 !important;
+  }  
 }
 
 /* 3:Inicio
@@ -1136,6 +1153,7 @@ color: rgb(255, 255, 255);
   .migas {
     font-size: 1.0em;
   }  
+  .navbar
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
