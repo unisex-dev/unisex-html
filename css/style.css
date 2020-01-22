@@ -1165,10 +1165,10 @@ color: rgb(255, 255, 255);
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .pagina-nombre {
-    font-size: 9.4em; 
+    font-size: 0.4em; 
   }
   .migas {
-    font-size: 9.3em;
+    font-size: 0.3em;
   } 
   .img-bio{
     display: none;
@@ -1181,7 +1181,7 @@ color: rgb(255, 255, 255);
       font-size: 0.3em;  
    }
   .migas {
-    font-size: 9.2em;
+    font-size: 0.2em;
   } 
 }
 
