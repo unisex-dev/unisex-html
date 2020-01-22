@@ -2,16 +2,10 @@
 ================================================== */
 html, body {
   font-family:'Open Sans',sans-serif;
- overflow: hidden;
+ /*overflow: hidden;*/
   color: #444;
 }
- @media screen and (max-width: 768px) {
-html, body {
-  font-family:'Open Sans',sans-serif;
-  overflow: visible
-  color: #444;
-}
-}
+
 body ::selection,
 body ::-moz-selection {
     background:rgba(2, 251, 253,  0.8);
@@ -379,6 +373,11 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
   background-color: #202020 !important;
   }  
 }
+@media screen and (max-width: 768px) {
+  .indicador {
+    margin: 60px;
+}  
+}
 
 /* 3:Inicio
 ==================================================*/
@@ -387,7 +386,14 @@ box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,0.75);
 .slider {
   min-height: 100vh;
 } 
+/*Opiniones*/
 
+@media screen and (max-width: 800px) {
+ #opiniones .opinion {
+  height: 300px;
+  min-height: 100px;
+} 
+}
 /*Ofrecemos*/
 
 #servicios .servicio {
@@ -1181,3 +1187,5 @@ color: rgb(255, 255, 255);
 ================================================== */
 
 /* Pie */
+
+

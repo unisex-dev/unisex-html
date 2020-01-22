@@ -39,7 +39,7 @@
   </button>
    <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ml-auto">
-     <li class="nav-item">
+     <li class="nav-item active">
      	<a class="nav-link" href="index.html">Inicio</a>
      </li>
      <li class="nav-item">
@@ -55,6 +55,7 @@
        	<a class="dropdown-item" href="blog-post.html">Entrada Blog</a>
        	<a class="dropdown-item" href="portfolio.html">Portfolio</a>
        	<a class="dropdown-item" href="portfolio-item.html">Item Portfolio</a>
+        <a class="dropdown-item" href="404.html">404</a>
       </div>
       <!-- /.dropdown-menu -->
      </li>
@@ -114,24 +115,24 @@
  </section>
 
 
- <section class="text-white " id="acerca">
+ <section class="text-white " id="opiniones">
   <div class="swiper-container slider-frases">
    <div class="swiper-wrapper">
-    <div class="swiper-slide bg-dark">
+    <div class="swiper-slide bg-dark opinion">
      <div class="col-lg-8 text-center mx-auto my-5">
       <p class="quote">“Dar el Premio Linus Torvalds a la Free Software Foundation es casi como dar el Premio Han Solo Award a la Alianza Rebelde.”</p>
       <hr class="magenta">
       <small class="text-faded">-Richard Stallman</small>
      </div>
     </div>
-    <div class="swiper-slide bg-dark">
+    <div class="swiper-slide bg-dark opinion">
      <div class="col-lg-8 text-center mx-auto my-5">
       <p class="quote">“Básicamente, no necesitamos GPL. Se basa en la creencia de que el software de código abierto es débil y necesita protección. Con él, continuamos lesionándonos, cortándonos de los beneficios económicos de la licencia BSD”</p>
       <hr class="magenta">
       <small class="text-faded">-Eric S. Raymond</small>
      </div>
     </div>
-    <div class="swiper-slide bg-dark">
+    <div class="swiper-slide bg-dark opinion">
      <div class="col-lg-8 text-center mx-auto my-5">
       <p class="quote">“El código abierto es genial, pero nunca ha sido una guerra religiosa para mi.”</p>
       <hr class="magenta">
@@ -151,9 +152,12 @@
     <div class="col-md-6 p-0">
 
      <div class="row no-gutters bg-fucsia">
-      <div class="col-md-6 p-0  m-lg-auto text-center p-0">
+
+      <div class="col-md-6 p-0  m-lg-auto text-center p-0 indicador">
        <h1 class="text-light my-5 text-uppercase font-weight-bold font-italic">Trabajos</h1>
       </div>
+
+   <!--loop portafolio-->
       <div class="col-md-6 ads p-0 graphics">
        <a href="portfolio-item.html" class="portfolio_item">
         <img src="https://source.unsplash.com/x-HpilsdKEk/800x800" alt="website template image" class="img-fluid">
@@ -165,9 +169,11 @@
         </div>
        </a>
       </div>
+
      </div>
 
      <div class="row no-gutters">
+
       <div class="col-md-6 p-0">
        <a href="portfolio-item.html" class="portfolio_item">
         <img src="https://source.unsplash.com/IyaNci0CyRk/800x800" alt="website template image" class="img-fluid">
@@ -179,6 +185,7 @@
         </div>
        </a>
       </div>
+
       <div class="col-md-6 p-0">
        <a href="portfolio-item.html" class="portfolio_item">
         <img src="https://source.unsplash.com/S0qh0ONK-AE/800x800" alt="website template image" class="img-fluid">
@@ -190,10 +197,13 @@
         </div>
        </a>
       </div>
+
      </div>
 
     </div>
+ <!-- /.loop portafolio -->
 
+   <!--  portafolio destacado -->
     <div class="col-md-6 p-0 photography">
      <a href="portfolio-item.html" class="portfolio_item">
       <img src="https://source.unsplash.com/z6M2R2Jrd4U/800x800" alt="website template image" class="img-fluid">
@@ -205,7 +215,9 @@
       </div>
      </a>
     </div>
+    <!-- /.portafolio destacado  -->
 
+    <!-- loop portafolio continuacion  -->
     <div class="col-md-12 p-0">
      <div class="row no-gutters">
       <div class="col-md-3 p-0 fashion logo">
@@ -254,7 +266,7 @@
       </div>
      </div>
     </div>
-
+<!-- /.loop portafolio continuacion  -->
    </div>
   </div>
  </section>
@@ -327,7 +339,7 @@
      <div class="row no-gutters bg-cian">
 
 
-      <div class="col-md-3 m-lg-auto text-center p-0">
+      <div class="col-md-3 m-lg-auto text-center p-0 indicador">
        <div class="h-100">
         <h1 class="text-light my-5 text-uppercase font-weight-bold font-italic">Servicios</h1>
        </div>
@@ -448,7 +460,7 @@
  <section id="noticias">
   <div class="container-fluid bg-fucsia p-0">
    <div class="row">
-    <div class="col-md-3 m-lg-auto text-center p-0">
+    <div class="col-md-3 m-lg-auto text-center p-0 indicador">
      <div class="h-100">
       <h1 class="text-light my-5 text-uppercase font-weight-bold font-italic">blog</h1>
      </div>
@@ -458,15 +470,15 @@
       <div class="swiper-wrapper">
        <div class="swiper-slide">
         <div class="card">
-         <a href="portfolio-item.html"><img class="card-img-top" src="https://source.unsplash.com/p0j-mE6mGo4/600x600"></a>
+         <a href="blog-post.html"><img class="card-img-top" src="https://source.unsplash.com/p0j-mE6mGo4/600x600"></a>
          <div class="card-block bg-blanco">
           <div class="profile">
-           <a href="portfolio-item.html"><img src="https://source.unsplash.com/2McglrBFkns/500x500" class="profile-avatar" alt=""></a>
+           <a href="blog-post.html"><img src="https://source.unsplash.com/2McglrBFkns/500x500" class="profile-avatar" alt=""></a>
           </div>
           <div class="meta">
-           <a href="portfolio-item.html">Videojuegos</a>
+           <a href="blog-post.html">Videojuegos</a>
           </div>
-          <a href="portfolio-item.html">
+          <a href="blog-post.html">
            <h4 class="card-title mt-3 text-md-left">El videojuego de la vieja escuela esta de moda</h4>
           </a>
           <div class="card-text text-md-left">
@@ -475,21 +487,21 @@
          </div>
          <div class="card-footer text-md-left">
           <small>Subido hace 3 minutos</small>
-          <button class="btn btn-primary float-right btn-sm">Ver</button>
+          <a href="blog-post.html"><button class="btn btn-primary float-right btn-sm">Ver</button></a>
          </div>
         </div>
        </div>
        <div class="swiper-slide">
         <div class="card">
-         <a href="portfolio-item.html"><img class="card-img-top" src="https://source.unsplash.com/yJPtjTjrMXk/600x600"></a>
+         <a href="blog-post.html"><img class="card-img-top" src="https://source.unsplash.com/yJPtjTjrMXk/600x600"></a>
          <div class="card-block bg-blanco">
           <div class="profile">
-           <a href="portfolio-item.html"><img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="profile-avatar" alt=""></a>
+           <a href="blog-post.html"><img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="profile-avatar" alt=""></a>
           </div>
           <div class="meta">
-           <a href="portfolio-item.html">Tecnologia</a>
+           <a href="blog-post.html">Tecnologia</a>
           </div>
-          <a href="portfolio-item.html">
+          <a href="blog-post.html">
            <h4 class="card-title mt-3 text-md-left">La Frambuesa electrica ataca de nuevo</h4>
           </a>
           <div class="card-text text-md-left">
@@ -498,21 +510,21 @@
          </div>
          <div class="card-footer text-md-left">
           <small>Subido hace 3 minutos</small>
-          <button class="btn btn-primary float-right btn-sm">Ver</button>
+          <a href="blog-post.html"><button class="btn btn-primary float-right btn-sm">Ver</button></a>
          </div>
         </div>
        </div>
        <div class="swiper-slide">
         <div class="card">
-         <a href="portfolio-item.html"><img class="card-img-top" src="https://source.unsplash.com/K4txLik7pnY/600x600"></a>
+         <a href="blog-post.html"><img class="card-img-top" src="https://source.unsplash.com/K4txLik7pnY/600x600"></a>
          <div class="card-block bg-blanco">
           <div class="profile">
-           <a href="portfolio-item.html"><img src="https://source.unsplash.com/ZI6p3i9SbVU/500x500" class="profile-avatar" alt=""></a>
+           <a href="blog-post.html"><img src="https://source.unsplash.com/ZI6p3i9SbVU/500x500" class="profile-avatar" alt=""></a>
           </div>
           <div class="meta">
-           <a href="portfolio-item.html">Internet</a>
+           <a href="blog-post.html">Internet</a>
           </div>
-          <a href="portfolio-item.html">
+          <a href="blog-post.html">
            <h4 class="card-title mt-3 text-md-left">Tanto exito de la "G" sera eterno?</h4>
           </a>
           <div class="card-text text-md-left">
@@ -521,21 +533,21 @@
          </div>
          <div class="card-footer text-md-left">
           <small>Subido hace 3 minutos</small>
-          <button class="btn btn-primary float-right btn-sm">Ver</button>
+          <a href="blog-post.html"><button class="btn btn-primary float-right btn-sm">Ver</button></a>
          </div>
         </div>
        </div>
        <div class="swiper-slide">
         <div class="card">
-         <a href="portfolio-item.html"><img class="card-img-top" src="https://source.unsplash.com/466ENaLuhLY/600x600"></a>
+         <a href="blog-post.html"><img class="card-img-top" src="https://source.unsplash.com/466ENaLuhLY/600x600"></a>
          <div class="card-block bg-blanco">
           <div class="profile">
-           <a href="portfolio-item.html"><img src="https://source.unsplash.com/466ENaLuhLY/500x500" class="profile-avatar" alt=""></a>
+           <a href="blog-post.html"><img src="https://source.unsplash.com/466ENaLuhLY/500x500" class="profile-avatar" alt=""></a>
           </div>
           <div class="meta">
-           <a href="portfolio-item.html">Codigo</a>
+           <a href="blog-post.html">Codigo</a>
           </div>
-          <a href="portfolio-item.html">
+          <a href="blog-post.html">
            <h4 class="card-title mt-3 text-md-left">Ruby on rails... como ocurrio el desastre</h4>
           </a>
           <div class="card-text text-md-left">
@@ -544,7 +556,7 @@
          </div>
          <div class="card-footer text-md-left">
           <small>Subido hace 3 minutos</small>
-          <button class="btn btn-primary float-right btn-sm">Ver</button>
+          <a href="blog-post.html"><button class="btn btn-primary float-right btn-sm">Ver</button></a>
          </div>
         </div>
        </div>
