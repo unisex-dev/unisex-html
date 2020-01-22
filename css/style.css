@@ -2,7 +2,7 @@
 ================================================== */
 html, body {
   font-family:'Open Sans',sans-serif;
- /*overflow: hidden;*/
+  overflow: hidden;
   color: #444;
 }
 
@@ -1165,10 +1165,10 @@ color: rgb(255, 255, 255);
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .pagina-nombre {
-    font-size: 0.5em; 
+    font-size: 9.4em; 
   }
   .migas {
-    font-size: 0.4em;
+    font-size: 9.3em;
   } 
   .img-bio{
     display: none;
@@ -1178,9 +1178,11 @@ color: rgb(255, 255, 255);
 @media only screen and (max-width: 320px) {
 
 .pagina-nombre { 
-      font-size: 0.5em;  
+      font-size: 0.3em;  
    }
-
+  .migas {
+    font-size: 9.2em;
+  } 
 }
 
 /* :Pies
